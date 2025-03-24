@@ -103,6 +103,11 @@ export async function analyzeKeywords(
         1. Count its occurrences
         2. Determine its sentiment (positive, negative, or neutral)
         
+        Ensure that the result is a valid JSON object without any errors such as:
+        - Invalid characters
+        - Consecutive commas
+        - Duplicate fields within an object
+        
         Return the result in this exact JSON format:
         {
           "keywords": [

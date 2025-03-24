@@ -57,6 +57,8 @@ export async function analyzeComments(
           ]
         }
         
+        Ensure that the JSON is valid and does not contain any invalid characters, duplicate fields, or other formatting issues.
+        
         Comments:
         ${comments.join("\n")}`;
 

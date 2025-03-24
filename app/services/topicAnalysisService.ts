@@ -38,6 +38,12 @@ export async function analyzeTopics(
            - List 3-5 key terms associated with it
         3. Overall sentiment analysis as percentages (positive, negative, neutral)
         
+        Ensure that the result is in valid JSON format without any errors such as:
+        - Invalid characters
+        - Consecutive commas
+        - Duplicate fields in an object
+        - Any other issues that may cause problems
+        
         Return the result in this exact JSON format:
         {
           "topics": [

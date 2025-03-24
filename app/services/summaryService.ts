@@ -31,6 +31,11 @@ export async function generateSummary(comments: string[]): Promise<Summary> {
           "translated": "summary translated to the predominant language"
         }
 
+        Ensure that the JSON is valid and does not contain any errors such as:
+        - Invalid characters
+        - Consecutive commas
+        - Duplicate fields within an object
+
         Comments:
         ${comments.join("\n")}`;
 

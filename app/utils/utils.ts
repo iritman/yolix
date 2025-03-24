@@ -1,5 +1,5 @@
 export function extractJsonFromResponse(content: string): string {
-  return content.trim().replace(/^[^{]*|[^}]*$/g, "");
+  return content.trim().replace("```json", "").replace("```", "");
 }
 
 export function parseJsonResponse(content: string): any {
